@@ -8,7 +8,7 @@ const ejs = require('ejs');
 const app = express();
 
 
-mongoose.connect('mongodb+srv://admin:Kanishika23@cluster0.sjcpv5s.mongodb.net/?retryWrites=true&w=majority').then(() => {
+mongoose.connect('mongodb+srv://admin:Kanishika23@cluster0.sjcpv5s.mongodb.net/trees?retryWrites=true&w=majority').then(() => {
   console.log("Database connected")
 })
 const db = mongoose.connection;
@@ -17,8 +17,8 @@ const dataSchema = new mongoose.Schema({
   name: String,
   email: { type: String, unique: true },
   mobileno:{ type: String,unique:true },
-  noOfTrees: Number,
   amount: Number,
+  noOfTrees: Number,
 });
 
 const Data = mongoose.model('Data', dataSchema);
