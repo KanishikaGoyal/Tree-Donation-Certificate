@@ -7,7 +7,6 @@ const pdf = require('html-pdf');
 const ejs = require('ejs');
 const app = express();
 
-
 mongoose.connect('mongodb+srv://admin:Kanishika23@cluster0.sjcpv5s.mongodb.net/trees?retryWrites=true&w=majority').then(() => {
   console.log("Database connected")
 })
@@ -75,7 +74,7 @@ app.post('/upload', upload.single('file'), async (req, res) => {
             service: 'Gmail',
             auth: {
               user: 'kanishika0722.be21@chitkara.edu.in',
-              pass: 'Nehagoyal1983'
+              pass: 'asdfghjkl@098765'
             }
           });
 
