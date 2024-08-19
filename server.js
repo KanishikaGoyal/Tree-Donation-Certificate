@@ -74,7 +74,7 @@ app.post('/upload', upload.single('file'), async (req, res) => {
             service: 'Gmail',
             auth: {
               user: 'kanishika0722.be21@chitkara.edu.in',
-              pass: 'asdfghjkl@098765'
+              pass: 'Calcium@12345',
             }
           });
 
